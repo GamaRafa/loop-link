@@ -1,0 +1,7 @@
+{
+  "name": "loop-link",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
