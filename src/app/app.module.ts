@@ -10,10 +10,10 @@ import { AppRoutingModule } from './app-routing.module';
 import * as cordovaSQLiteDriver from 'localforage-cordovasqlitedriver';
 import { IonicStorageModule } from '@ionic/storage-angular';
 import { Drivers } from '@ionic/storage';
-import { ToolbarComponent } from "./shared/components/toolbar/toolbar.component";
+import { SidenavComponent } from './shared/components/sidenav/sidenav.component';
 
 @NgModule({
-    declarations: [AppComponent],
+    declarations: [AppComponent, SidenavComponent],
     providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],
     bootstrap: [AppComponent],
     imports: [
@@ -24,7 +24,6 @@ import { ToolbarComponent } from "./shared/components/toolbar/toolbar.component"
             name: 'yarnDatabase',
             driverOrder: [cordovaSQLiteDriver._driver, Drivers.IndexedDB, Drivers.LocalStorage]
         }),
-        ToolbarComponent,
     ]
 })
 export class AppModule {}
