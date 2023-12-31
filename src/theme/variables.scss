@@ -1,3 +1,8 @@
+@import 'tailwindcss/base';
+
+@import 'tailwindcss/components';
+
+@import 'tailwindcss/utilities';
 // Ionic Variables and Theming. For more info, please see:
 // http://ionicframework.com/docs/theming/
 
@@ -242,3 +247,10 @@ html {
    */
   --ion-dynamic-font: var(--ion-default-dynamic-font);
 }
+
+// Color palette
+$soft-mint: #9ed8b6;
+$lavender-mist: #c9a7e3;
+$peach-sorbet: #f5c6aa;
+$powder-blue: #add8e6;
+$buttercream: #f8e3a1;
